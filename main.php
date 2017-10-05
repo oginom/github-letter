@@ -1,4 +1,5 @@
 <?php
+  date_default_timezone_set('TKY');
   //if(!file_exists('')) {
   //}
   $f = file("lastupdate.txt");
