@@ -1,10 +1,15 @@
 <?php
   date_default_timezone_set('Asia/Tokyo');
-  //if(!file_exists('')) {
-  //}
+  $d = date(z);
   $f = file("lastupdate.txt");
   var_dump($f);
-  $d = date(z);
+  $a = $b = 0;
+  try {
+    $a = intval($f[0]);
+    $b = intval($f[1]);
+  } catch(Exception $e) {
+    echo "error\n";
+  }
   file_put_contents("lastupdate.txt", $d);
   exec("git add lastupdate.txt", $outpara);
   exec("git commit -a -m 'update'", $outpara);
