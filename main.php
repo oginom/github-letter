@@ -1,5 +1,5 @@
 <?php
-  date_default_timezone_set('TKY');
+  date_default_timezone_set('Asia/Tokyo');
   //if(!file_exists('')) {
   //}
   $f = file("lastupdate.txt");
