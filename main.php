@@ -1,6 +1,7 @@
 <?php
   date_default_timezone_set('Asia/Tokyo');
   $w = date("w");
+  var_dump($w);
   
   $mat = array(
     array(1, 1, 1, 1, 1, 1, 1),
