@@ -59,7 +59,6 @@
     $f_c = $f_c + 1;
     $s = $f_l."\n".$f_w."\n".$f_c."\n";
     file_put_contents("lastupdate.txt", $s);
-    exec("git add lastupdate.txt", $outpara);
     exec("git commit -a -m 'update'", $outpara);
     exec("git push origin master", $outpara);
   }
