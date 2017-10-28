@@ -61,5 +61,8 @@
     file_put_contents("lastupdate.txt", $s);
     exec("git commit -a -m 'update'", $outpara);
     exec("git push origin master", $outpara);
+  } else {
+    $s = $f_l."\n".$f_w."\n".$f_c."\n";
+    file_put_contents("lastupdate.txt", $s);
   }
 ?>
